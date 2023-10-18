@@ -21,3 +21,13 @@ Scanner scanner = new Scanner(System.in);
         }
 
         // Obtener la selección del usuario
+int selection = scanner.nextInt();
+
+        // Verificar si la selección es válida
+        if (selection < 1 || selection > countries.length) {
+            System.out.println("Selección no válida.");
+            return;
+        }
+
+        // Obtener la zona horaria del país seleccionado
+        String selectedTimeZone = timeZones[selection - 1];
