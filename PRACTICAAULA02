@@ -5,4 +5,12 @@ import java.util.Date;
 
 public class WorldClock {
 
-    public static void main(String[] args) {
+  public static void main(String[]args)
+{
+Scanner scanner = new Scanner(System.in);
+
+        // Array de países
+        String[] countries = {"Estados Unidos", "Reino Unido", "Francia", "Alemania", "Italia"};
+
+        // Array de zonas horarias
+        String[] timeZones = {"America/New_York", "Europe/London", "Europe/Paris", "Europe/Berlin", "Europe/Rome"};
