@@ -31,3 +31,12 @@ int selection = scanner.nextInt();
 
         // Obtener la zona horaria del país seleccionado
         String selectedTimeZone = timeZones[selection - 1];
+// Obtener la hora actual en la zona horaria seleccionada
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+        dateFormat.setTimeZone(TimeZone.getTimeZone(selectedTimeZone));
+        String currentTime = dateFormat.format(new Date());
+
+        // Imprimir la hora actual en el país seleccionado
+        System.out.println("La hora actual en " + countries[selection - 1] + " es " + currentTime);
+    }
+}
